@@ -1,0 +1,80 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Colab uploads/downloads
+*.ipynb.json
+
+# Environment and dependencies
+.env
+.venv/
+env/
+venv/
+*.env
+*.egg-info/
+pip-wheel-metadata/
+
+# VSCode & IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Hugging Face
+huggingface/
+*.h5
+tokenizer_config.json
+config.json
+pytorch_model.bin
+*.ckpt
+
+# Wandb
+wandb/
+wandb-debug.log
+wandb.latest
+
+# Logs and outputs
+*.log
+*.out
+*.tmp
+*.bak
+
+# Model artifacts and outputs
+outputs/
+results/
+checkpoints/
+runs/
+*.pt
+*.pth
+*.onnx
+
+# Datasets
+*.csv
+*.tsv
+*.json
+*.zip
+*.tar.gz
+*.rar
+data/
+dataset/
+input/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Colab auth
+*.boto
+credentials.json
+
+# Ignore HTML output files if any
+*.html
+
+# Ignore requirements lock files if not needed
+poetry.lock
+Pipfile.lock
