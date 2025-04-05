@@ -1,4 +1,4 @@
-# 🚀 HTML Code Generation using Falcon-7B LLM Model
+# HTML Code Generation using Falcon-7B LLM Model
 
 This repository contains the implementation for generating HTML code using **Falcon-7B**, a large language model fine-tuned using the **PEFT (Parameter Efficient Fine-Tuning)** technique. The goal is to generate accurate and semantically meaningful HTML code based on user prompts or natural language instructions.
 
