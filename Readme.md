@@ -1,57 +1,101 @@
-# HTML Code Generation using Falcon-7B LLM Model
+# 🚀 HTML Code Generation using Falcon-7B LLM Model
 
-This repository contains code for generating HTML code using Falcon-7B, a large language model fine-tuned with the PEFT (Parameter Efficient Fine-Tuning) technique. The aim is to generate HTML code based on user prompts or instructions.
+This repository contains the implementation for generating HTML code using **Falcon-7B**, a large language model fine-tuned using the **PEFT (Parameter Efficient Fine-Tuning)** technique. The goal is to generate accurate and semantically meaningful HTML code based on user prompts or natural language instructions.
 
-## Overview
+---
 
-In this project, we utilize state-of-the-art language models like Falcon-7B for generating HTML code based on user instructions. The project focuses on fine-tuning Falcon-7B using the PEFT technique to make the model efficient regarding memory usage and runtime while preserving performance.
+## 🧠 Overview
 
-## Features
+In this project, we leverage **Falcon-7B**, a cutting-edge LLM, for HTML code generation. The model is fine-tuned using the **PEFT** technique, enabling efficient memory and computation usage without compromising performance.
 
-- Utilizes Falcon-7B, a large language model, for text generation.
-- Fine-tuning with the PEFT technique for efficient memory usage and runtime.
-- Support for generating HTML code based on user instructions or prompts.
-- Evaluation metrics such as BLEU score and custom evaluation functions are used to assess generated HTML code quality.
+---
 
-## Dataset
-- [alpaca-instructions-dataset](https://huggingface.co/datasets/ttbui/html_alpaca)
+## ✨ Features
 
+- 🔮 **Falcon-7B** based text generation for HTML
+- ⚙️ **PEFT-based fine-tuning** for lightweight training and inference
+- 📝 Generates structured and semantically correct HTML from natural language prompts
+- 📊 Evaluation using **BLEU Score** and **custom metrics**
+- 🧪 Ready-to-use in **Google Colab** for training and inference
 
-## Prerequisites
+---
 
-Before running the code, ensure you have the following dependencies installed:
+## 📂 Dataset
 
-- Python
+We use a subset of the Alpaca-style instruction dataset fine-tuned for HTML:
+
+- 📁 [`html_alpaca` Dataset on Hugging Face](https://huggingface.co/datasets/ttbui/html_alpaca)
+
+---
+
+## ✅ Prerequisites
+
+Before running the project, ensure the following dependencies are installed:
+
+- Python ≥ 3.8
 - PyTorch
-- Transformers library from Hugging Face
-- Other required Python packages (listed in requirements.txt)
+- `transformers` (Hugging Face)
+- `peft`
+- `accelerate`
+- `wandb`
+- Other dependencies listed in `requirements.txt`
 
-## How to run on Google Colab
+---
 
-### Step 1
-- Upload file `html-generation.ipynb` on google colab online interpreter for python.
+## ⚙️ How to Run on Google Colab
 
-### Step 2
-- Run the cell one by one
-- Hugging Face: Login using the token generated from your Hugging Face profile.
-- Wandb: Paste the API key from your Wandb profile and hit enter.
+### 🔹 Step 1: Upload Notebook
+- Upload the `html-generation.ipynb` notebook to [Google Colab](https://colab.research.google.com/)
 
-### Step 3
-- In the Inference Model cell paste the testcase from the input folder in the prompt section
+### 🔹 Step 2: Setup Authentication
+- 🔑 **Hugging Face**: Paste your Hugging Face token to login.
+- 🔑 **Weights & Biases (Wandb)**: Paste your API key for tracking experiments.
 
-## Evaluation Metrics
+### 🔹 Step 3: Run Inference
+- Scroll to the **Inference Model** cell.
+- Paste your desired test case from the `/input` folder into the prompt box.
 
-- BLEU Score: Measures the similarity between generated and expected HTML code.
-- Custom Evaluation Functions: Assess relevant tags accuracy, structure accuracy, styling, and scripting elements, semantic accuracy, and overall score.
+---
 
+## 📈 Evaluation Metrics
 
-## Authors
+- **BLEU Score**: Evaluates n-gram similarity between generated and reference HTML.
+- **Custom Metrics**:
+  - ✅ Tag correctness
+  - ✅ Structural accuracy
+  - ✅ Styling and scripting analysis
+  - ✅ Semantic correctness
+  - ✅ Overall quality score
+
+---
+
+## 📁 Project Structure
+html-falcon7b-htmlgen/
+├── input/
+│   └── sample_prompt.txt
+├── output/
+│   └── sample_output.html
+├── html-generation.ipynb
+├── requirements.txt
+├── .gitignore
+└── README.md
+
+---
+
+## 👨‍💻 Author
 
 - [Shambhoolal Narwaria](https://github.com/mr-narwaria)
-- [Alhan Charan Beshra](https://github.com/ezio2605)
-- [Abhishek Raj](https://github.com/Abhi9708bittu)
 
-<br>
+---
 
-  Enjoy the Model!
+## 🌟 Acknowledgments
 
+- Hugging Face 🤗 for Transformers and Datasets
+- Wandb for experiment tracking
+- The creators of the `html_alpaca` dataset
+
+---
+
+## 🎉 Enjoy the Model!
+
+Feel free to fork, contribute, and share your feedback! If you like this project, give it a ⭐ on GitHub.
